@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>
+    
+    <img id="bulbIMG" style="display: none"
+             src="favpng_incandescent-light-bulb-drawing.png"/>
+    <h1><span id="nameT"></span></h1>
+    <br>
+    <canvas id="canvas" style="border: 1px solid"></canvas>
+    <br>
+    <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+    <br>
+    <button data-toggle-id = "rules">Játék leírás</button>
+
+    <br>
+    <label for="inp">Játékos neve: </label>
+    
+    <input type="text" id="name" name="inp">
+    <select id = "diff">
+        <option value="1">Könnyű 7x7</option>
+        <option value="2">Közepes 7x7</option>
+        <option value="3">Nehéz 10x10</option>
+    </select>
+    <br>
+    <button id="start">Játék indítása</button>
+    <button id="save">Játék mentése</button>
+    <br>
+    <div id="rules" hidden>
+        <p>Nekeresdországban Nevenincs királynak egyik szeme sír, a másik nevet. Nevet, mert végre elkészült a hatalmas kacsalábon forgó palotája, sok-sok tágas szobával és folyosóval. 
+        Ugyanakkor sír is, mert ezeket a helyiségeket be kell világítani és melegen kell tartani, azonban az aktuális rezsiemelkedés őt is érinti. 
+        Itt az ideje tehát elgondolkodni, hogy pontosan hová is helyezzünk el villanykörtéket, hogy minden megfelelően be legyen világítva; ugyanakkor csak oda helyezzünk el izzót, ahol ténylegesen szükség is van rá.
+
+        </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+    
+</html>
